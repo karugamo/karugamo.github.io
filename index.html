@@ -17,23 +17,42 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: #EFD49F;
-          font-size: 5em;
+          flex-direction: column;
+          background: linear-gradient(226.37deg, #EED49F 18.06%, rgba(249, 231, 196, 0.75) 91.8%);
           overflow-y: hidden;
           margin: 0;
-          font-weight: lighter;
           color: #000018;
           overflow-y: hidden;
           font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
       }
 
-      img {
+      h1 {
+        font-size: 5em;
+        font-weight: lighter;
+      }
+
+      a {
+        color: #000018;
+        font-style: normal;
+        font-size: 1.2em;
+        font-weight: lighter;
+      }
+
+      .logo {
         position: fixed;
         bottom: 0px;
-        left: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
       }
   </style>
 </head>
-<body><img src="logo.png" />karugamo</body>
+<body>
+  <h1>karugamo</h1>
+  <address><a href="mailto:hello@karugamo.agency">hello@karugamo.agency</a></address>
+  <div class="logo">
+    <img src="logo.png" />
+  </div>
+</body>
 </html>

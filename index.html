@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset=utf-8>
   <title>karugamo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦆</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦆</text></svg>">
   <style>
-      html,body {
-        position: fixed;
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-        overflow-y: hidden;
-        background: linear-gradient(226.37deg, #f3ce85 18.06%, rgba(249, 231, 196, 0.75) 91.8%);
-        margin: 0;
+    html,
+    body {
+      position: fixed;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      overflow-y: hidden;
+      background: linear-gradient(226.37deg, #f3ce85 18.06%, rgba(249, 231, 196, 0.75) 91.8%);
+      margin: 0;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-      main {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          justify-content: center;
-          max-width: 500px;
-          flex-direction: column;
-          color: #000018;
-          overflow-y: hidden;
-          font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
-      }
+    main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      flex-direction: column;
+      color: #000018;
+      overflow-y: hidden;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, sans-serif;
+    }
 
-      h1 {
-        font-size: 80px ;
-        font-weight: lighter;
-        margin-bottom: 30px;
-      }
+    h1 {
+      font-size: 80px;
+      font-weight: lighter;
+      margin-bottom: 50px;
+    }
 
-      a {
-        color: #000018;
-        font-style: normal;
-        font-size: 1.2em;
-        font-weight: lighter;
-      }
+    a {
+      color: #000018;
+      font-style: normal;
+      font-size: 1.2em;
+      font-weight: lighter;
+    }
 
-      .logo {
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
+    .logo {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 
-      section {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-        margin-bottom: 30px;
-      }
+    section {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 50px;
+    }
 
-      section img {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 300px;
-      }
+    section img {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 300px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   </style>
 </head>
+
 <body>
   <main>
     <h1>karugamo</h1>
     <section>
-      <img width="120" src="img/finn.jpg" alt="Finn" />
-      <img width="120" src="img/alex.jpg" alt="Alex" />
+      <div class="profile">
+        <a href="https://www.linkedin.com/in/finnpauls/" target="_blank"><img width="120" src="img/finn.jpg" alt="Finn" /></a>
+        finn pauls
+      </div>
+      <div class="profile">
+        <a href="https://www.linkedin.com/in/alexander-assmann-396880182/" target="_blank"><img width="120" src="img/alex.jpg"
+            alt="Alex" /></a>
+          alexander assmann
+      </div>
     </section>
     <address><a href="mailto:hello@karugamo.agency">hello@karugamo.agency</a></address>
     <div class="logo">
@@ -82,4 +99,5 @@
     </div>
   </main>
 </body>
+
 </html>

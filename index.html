@@ -11,16 +11,23 @@
         overflow: hidden;
         height: 100%;
         width: 100%;
+        overflow-y: hidden;
+        background: linear-gradient(226.37deg, #f3ce85 18.06%, rgba(249, 231, 196, 0.75) 91.8%);
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
       }
 
-      body {
+      main {
           display: flex;
           align-items: center;
-          justify-content: center;
           flex-direction: column;
-          background: linear-gradient(226.37deg, #EED49F 18.06%, rgba(249, 231, 196, 0.75) 91.8%);
-          overflow-y: hidden;
-          margin: 0;
+          justify-content: center;
+          max-width: 500px;
+          flex-direction: column;
           color: #000018;
           overflow-y: hidden;
           font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -28,8 +35,9 @@
       }
 
       h1 {
-        font-size: 5em;
+        font-size: 80px ;
         font-weight: lighter;
+        margin-bottom: 30px;
       }
 
       a {
@@ -46,13 +54,32 @@
         display: flex;
         justify-content: center;
       }
+
+      section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+
+      section img {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 300px;
+      }
   </style>
 </head>
 <body>
-  <h1>karugamo</h1>
-  <address><a href="mailto:hello@karugamo.agency">hello@karugamo.agency</a></address>
-  <div class="logo">
-    <img src="logo.png" />
-  </div>
+  <main>
+    <h1>karugamo</h1>
+    <section>
+      <img width="120" src="img/finn.jpg" alt="Finn" />
+      <img width="120" src="img/alex.jpg" alt="Alex" />
+    </section>
+    <address><a href="mailto:hello@karugamo.agency">hello@karugamo.agency</a></address>
+    <div class="logo">
+      <img src="img/logo.png" />
+    </div>
+  </main>
 </body>
 </html>

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
+<!--
+  Hello, thank you for checking out our source code.
+  As you can see our website is nothing more than a short html file. Nothing more.
+  We know how to use the right tool for the job. And if a job doesn't require
+  JavaScript then we simply won't use it.
+-->
 <html lang="en">
-
 <head>
   <meta charset=utf-8>
   <title>karugamo</title>
@@ -69,6 +74,32 @@
       flex-direction: column;
       align-items: center;
     }
+
+    .button {
+      background-color: #000018;
+      color: #FAE8C9;
+      text-shadow: 0px 0px 1px #F9F5EE;
+      text-decoration: none;
+      padding: 1rem 1.4rem;
+      font-weight: bolder;
+      box-shadow: 0px 3px 8px 3px rgb(0, 0,0, 0.4);
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .button:hover {
+      transform: translate(0px, -3px);
+      box-shadow: 0px 5px 8px 3px rgb(0, 0,0, 0.4);
+      background-color: #000018e6;
+    }
+
+    .button:active {
+      transform: translate(0px, 3px);
+      box-shadow: 0px 0px 8px 3px rgb(0, 0,0, 0.4);
+      background-color: black;
+    }
+
   </style>
 </head>
 
@@ -86,6 +117,7 @@
           alexander assmann
       </div>
     </section>
+    <a class="button" href="https://calendly.com/karugamo/30min" target="_blank">Book a Free Consultation</a>
     <address><a href="mailto:hello@karugamo.agency">hello@karugamo.agency</a></address>
   </main>
 </body>

@@ -120,7 +120,66 @@
 
     .duck-element {
       fill: var(--primary);
-      transition: fill 0.9s ease-in-out
+      animation: change-background 7s ease infinite;
+    }
+
+
+    .duck-element:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .duck-element:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    .duck-element:nth-child(4) {
+      animation-delay: 3s;
+    }
+
+    .duck-element:nth-child(5) {
+      animation-delay: 4s;
+    }
+
+
+    .duck-element:nth-child(6) {
+      animation-delay: 5s;
+    }
+
+
+    .duck-element:nth-child(7) {
+      animation-delay: 6s;
+    }
+
+    @keyframes change-background {
+
+      from,
+      to {
+        fill: #657B8B;
+      }
+
+      14.3% {
+        fill: #B1CCC0;
+      }
+
+      28.6% {
+        fill: #85A2A8;
+      }
+
+      42.9% {
+        fill: #576C85;
+      }
+
+      57.1% {
+        fill: #83A1A6;
+      }
+
+      71.4% {
+        fill: #576C85;
+      }
+
+      85.7% {
+        fill: #80A2A9;
+      }
     }
   </style>
 </head>
@@ -147,28 +206,6 @@
     </svg>
     <a class="button" href="mailto:hello@karugamo.agency" target="_blank">What can we help you with?</a>
   </main>
-  <script>
-    const colors = [
-      '#657B8B',
-      '#B1CCC0',
-      '#85A2A8',
-      '#576C85',
-      '#83A1A6',
-      '#576C85',
-      '#80A2A9'
-    ]
-
-    const duckElements = document.querySelectorAll('.duck-element')
-
-    let offset = 0
-
-    setInterval(() => {
-      for (let i = 0; i < duckElements.length; i++) {
-        duckElements[duckElements.length - i - 1].style.fill = colors[(i + offset) % colors.length]
-      }
-      offset++
-    }, 2000)
-  </script>
 </body>
 
 </html>

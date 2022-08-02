@@ -33,7 +33,7 @@
       height: 100%;
       width: 100%;
       overflow-y: hidden;
-      background: var(--background);
+      background: #f9f3f1;
       margin: 0;
 
       display: flex;
@@ -55,6 +55,19 @@
       font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
         'Helvetica Neue', Arial, sans-serif;
       font-weight: 300;
+      background: var(--background);
+      padding: 4em;
+      height: 100%;
+      border-radius: 4px;
+      box-shadow: 0px 0px 10px rgba(213, 200, 200, 0.289);
+    }
+
+    @media (min-width: 500px) {
+      main {
+        margin: 2em;
+        width: 500px;
+        height: 500px;
+      }
     }
 
     a {
